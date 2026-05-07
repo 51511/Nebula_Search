@@ -25,6 +25,6 @@ python rss_fetcher.py --feeds rss_feeds.json --output articles.json
 ```
 - 搜尋
 ```
-python rss_fetcher.py --search "Python 教學"
+python rss_fetcher.py --search "我與貍奴不出門"
 python rss_fetcher.py --search "生活" --limit 20
 ```
