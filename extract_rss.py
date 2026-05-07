@@ -25,6 +25,10 @@ except Exception:
 
 CONCURRENCY = 100
 
+
+INPUT_PATH = "/blogroll_graph.json" # 輸入Nebula結果路徑
+OUTPUT_PATH = "rss_feeds.json"
+
 TIMEOUT = aiohttp.ClientTimeout(
     total=15,
     connect=8,
@@ -418,16 +422,12 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "--input",
-        default=(
-            "/home/nolan/文件/"
-            "Nebula_search_egine/"
-            "blogroll_graph.json"
-        )
+        default=INPUT_PATH
     )
 
     parser.add_argument(
         "--output",
-        default="rss_feeds.json"
+        default=OUTPUT_PATH
     )
 
     args = parser.parse_args()
