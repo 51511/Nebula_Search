@@ -1,0 +1,1050 @@
+[
+  {
+    "domain": "blog.giveanornot.com",
+    "feed_url": "https://blog.giveanornot.com/index.xml"
+  },
+  {
+    "domain": "rongwords.com",
+    "feed_url": "https://rongwords.com/index.xml"
+  },
+  {
+    "domain": "hshuang.blog",
+    "feed_url": "https://hshuang.blog/index.xml"
+  },
+  {
+    "domain": "revolc.blog",
+    "feed_url": "https://revolc.blog/index.xml"
+  },
+  {
+    "domain": "tux24.xyz",
+    "feed_url": "https://tux24.xyz/index.xml"
+  },
+  {
+    "domain": "kiantiong.com",
+    "feed_url": "https://kiantiong.com/index.xml"
+  },
+  {
+    "domain": "ivonblog.com",
+    "feed_url": "https://ivonblog.com/index.xml"
+  },
+  {
+    "domain": "frankchi.com",
+    "feed_url": "https://frankchi.com/index.xml"
+  },
+  {
+    "domain": "eddielv.com",
+    "feed_url": "https://eddielv.com/index.xml"
+  },
+  {
+    "domain": "skyhong.tw",
+    "feed_url": "https://skyhong.tw/rss/"
+  },
+  {
+    "domain": "trashposts.com",
+    "feed_url": "https://trashposts.com/rss.xml"
+  },
+  {
+    "domain": "shuyulin1127.com",
+    "feed_url": "https://shuyulin1127.com/feed/"
+  },
+  {
+    "domain": "shuyulin1127.com",
+    "feed_url": "https://shuyulin1127.com/feed/?type=rss"
+  },
+  {
+    "domain": "yoe1.bearblog.dev",
+    "feed_url": "https://yoe1.bearblog.dev/feed/"
+  },
+  {
+    "domain": "yoe1.bearblog.dev",
+    "feed_url": "https://yoe1.bearblog.dev/feed/?type=rss"
+  },
+  {
+    "domain": "wancat.cc",
+    "feed_url": "https://wancat.cc/index.xml"
+  },
+  {
+    "domain": "note.drx.tw",
+    "feed_url": "https://note.drx.tw/feeds/posts/default"
+  },
+  {
+    "domain": "note.drx.tw",
+    "feed_url": "https://note.drx.tw/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "noa.bearblog.dev",
+    "feed_url": "https://noa.bearblog.dev/feed/"
+  },
+  {
+    "domain": "noa.bearblog.dev",
+    "feed_url": "https://noa.bearblog.dev/feed/?type=rss"
+  },
+  {
+    "domain": "dannypsnl.srht.site",
+    "feed_url": "https://dannypsnl.srht.site/rss.xml"
+  },
+  {
+    "domain": "ffyg.xyz",
+    "feed_url": "https://ffyg.xyz/index.xml"
+  },
+  {
+    "domain": "eoiiio.bearblog.dev",
+    "feed_url": "https://eoiiio.bearblog.dev/feed/"
+  },
+  {
+    "domain": "eoiiio.bearblog.dev",
+    "feed_url": "https://eoiiio.bearblog.dev/feed/?type=rss"
+  },
+  {
+    "domain": "trave11er.org",
+    "feed_url": "https://trave11er.org/index.xml"
+  },
+  {
+    "domain": "noefly.cc",
+    "feed_url": "https://noefly.cc/rss.xml"
+  },
+  {
+    "domain": "blog.qian30.net",
+    "feed_url": "https://blog.chien.dev/rss.xml"
+  },
+  {
+    "domain": "b23.kim",
+    "feed_url": "https://b23.kim/atom.xml"
+  },
+  {
+    "domain": "alexhsu.com",
+    "feed_url": "https://alexhsu.com/rss.xml"
+  },
+  {
+    "domain": "itsxiaobai.github.io",
+    "feed_url": "https://itsxiaobai.github.io/index.xml"
+  },
+  {
+    "domain": "samhacker.xyz",
+    "feed_url": "https://samhacker.xyz/rss.xml"
+  },
+  {
+    "domain": "kevinowo.com",
+    "feed_url": "https://kevinowo.com/feed"
+  },
+  {
+    "domain": "paperfishblog.netlify.app",
+    "feed_url": "https://paperfishblog.netlify.app/index.xml"
+  },
+  {
+    "domain": "thirdshire.com",
+    "feed_url": "https://thirdshire.com/index.xml"
+  },
+  {
+    "domain": "chihyang.cc",
+    "feed_url": "https://chihyang.cc/index.xml"
+  },
+  {
+    "domain": "lq7.tw",
+    "feed_url": "https://lq7.tw/index.xml"
+  },
+  {
+    "domain": "chen.info",
+    "feed_url": "https://chen.info/?feed=rss2"
+  },
+  {
+    "domain": "chen.info",
+    "feed_url": "https://chen.info/?feed=comments-rss2"
+  },
+  {
+    "domain": "blog.zeroplex.tw",
+    "feed_url": "https://blog.zeroplex.tw/feed/"
+  },
+  {
+    "domain": "blog.zeroplex.tw",
+    "feed_url": "https://blog.zeroplex.tw/comments/feed/"
+  },
+  {
+    "domain": "yimang.tw",
+    "feed_url": "https://yimang.tw/rss2.xml"
+  },
+  {
+    "domain": "jyhblog.xyz",
+    "feed_url": "https://jyhblog.xyz/atom.xml"
+  },
+  {
+    "domain": "jyhblog.xyz",
+    "feed_url": "https://jyhblog.xyz/rss.xml"
+  },
+  {
+    "domain": "blogg.ttheng.com",
+    "feed_url": "https://blogg.ttheng.com/index.xml"
+  },
+  {
+    "domain": "blog.linyuchin.com",
+    "feed_url": "https://blog.linyuchin.com/feed/"
+  },
+  {
+    "domain": "blog.linyuchin.com",
+    "feed_url": "https://blog.linyuchin.com/feed/?type=rss"
+  },
+  {
+    "domain": "pie-ye.org",
+    "feed_url": "https://pie-ye.org/index.xml"
+  },
+  {
+    "domain": "pealee.com",
+    "feed_url": "https://pealee.com/index.xml"
+  },
+  {
+    "domain": "blog.nudoragon.com",
+    "feed_url": "https://blog.nudoragon.com/feed"
+  },
+  {
+    "domain": "eeseoliz.net",
+    "feed_url": "https://eeseoliz.net/index.xml"
+  },
+  {
+    "domain": "leaftechblog.cloudns.biz",
+    "feed_url": "https://leaftechblog.cloudns.biz/rss.xml"
+  },
+  {
+    "domain": "puzelee.cc",
+    "feed_url": "https://puzelee.cc/index.xml"
+  },
+  {
+    "domain": "matling.fit",
+    "feed_url": "https://matling.fit/atom.xml"
+  },
+  {
+    "domain": "lixiang.blog",
+    "feed_url": "https://lixiang.blog/atom.xml"
+  },
+  {
+    "domain": "blog.ikukaroom.com",
+    "feed_url": "https://blog.ikukaroom.com/feed"
+  },
+  {
+    "domain": "blog.mdreame.space",
+    "feed_url": "https://blog.mdreame.space/rss.xml"
+  },
+  {
+    "domain": "wangdaodao.me",
+    "feed_url": "https://wangdaodao.me/feed"
+  },
+  {
+    "domain": "tjsky.net",
+    "feed_url": "https://tjsky.net/feed"
+  },
+  {
+    "domain": "wen-lab.tw",
+    "feed_url": "https://www.wen-lab.tw/rss/"
+  },
+  {
+    "domain": "leehenry.top",
+    "feed_url": "https://leehenry.top/rss.xml"
+  },
+  {
+    "domain": "igouist.github.io",
+    "feed_url": "https://igouist.github.io/index.xml"
+  },
+  {
+    "domain": "outrol.pika.page",
+    "feed_url": "https://outrol.pika.page/posts_feed"
+  },
+  {
+    "domain": "writee.org",
+    "feed_url": "https://writee.org/rss.xml"
+  },
+  {
+    "domain": "hjhmi89.bearblog.dev",
+    "feed_url": "https://hjhmi89.bearblog.dev/feed"
+  },
+  {
+    "domain": "jubeny.com",
+    "feed_url": "https://jubeny.com/feed.xml"
+  },
+  {
+    "domain": "infinity95.com",
+    "feed_url": "https://yo0-blog.pages.dev/rss.xml"
+  },
+  {
+    "domain": "sliun.com",
+    "feed_url": "https://sliun.com/feed/"
+  },
+  {
+    "domain": "sliun.com",
+    "feed_url": "https://sliun.com/feed/?type=rss"
+  },
+  {
+    "domain": "yoon.club",
+    "feed_url": "https://yoon.club/feed/"
+  },
+  {
+    "domain": "yoon.club",
+    "feed_url": "https://yoon.club/feed/?type=rss"
+  },
+  {
+    "domain": "wuminboke.site",
+    "feed_url": "https://wuminboke.site/feed"
+  },
+  {
+    "domain": "xajh.org",
+    "feed_url": "https://xajh.org/feed"
+  },
+  {
+    "domain": "xajh.org",
+    "feed_url": "https://xajh.org/comments/feed"
+  },
+  {
+    "domain": "daisy27.bearblog.dev",
+    "feed_url": "https://daisy27.bearblog.dev/feed/"
+  },
+  {
+    "domain": "daisy27.bearblog.dev",
+    "feed_url": "https://daisy27.bearblog.dev/feed/?type=rss"
+  },
+  {
+    "domain": "xifeng.net",
+    "feed_url": "https://xifeng.net/feed"
+  },
+  {
+    "domain": "gohugo.io",
+    "feed_url": "https://gohugo.io/index.xml"
+  },
+  {
+    "domain": "blow.streetvoice.com",
+    "feed_url": "https://blow.streetvoice.com/feed"
+  },
+  {
+    "domain": "yaxuanhe.me",
+    "feed_url": "https://yaxuanhe.me/index.xml"
+  },
+  {
+    "domain": "parkerchang.life",
+    "feed_url": "https://parkerchang.life/feed.xml"
+  },
+  {
+    "domain": "morningjason.com",
+    "feed_url": "https://morningjason.com/feed"
+  },
+  {
+    "domain": "amimoment.substack.com",
+    "feed_url": "https://amimoment.substack.com/feed"
+  },
+  {
+    "domain": "redesignyourdefault.substack.com",
+    "feed_url": "https://redesignyourdefault.substack.com/feed"
+  },
+  {
+    "domain": "onlywin.substack.com",
+    "feed_url": "https://onlywin.substack.com/feed"
+  },
+  {
+    "domain": "tammyyu.substack.com",
+    "feed_url": "https://tammyyu.substack.com/feed"
+  },
+  {
+    "domain": "yurenju.blog",
+    "feed_url": "https://yurenju.blog/rss.xml"
+  },
+  {
+    "domain": "maoyue.tw",
+    "feed_url": "https://maoyue.tw/rss.xml"
+  },
+  {
+    "domain": "bsccpsy.com",
+    "feed_url": "https://bsccpsy.com/feed/podcast"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/all-feed.xml"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/feed.xml"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/scroll-feed.xml"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/infosec-feed.xml"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/note-feed.xml"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/devlog-feed.xml"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/link-feed.xml"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/log-feed.xml"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/socialweb-feed.xml"
+  },
+  {
+    "domain": "shellsharks.com",
+    "feed_url": "https://shellsharks.com/feeds/life-feed.xml"
+  },
+  {
+    "domain": "ikukaroom.com",
+    "feed_url": "https://ikukaroom.com/feed"
+  },
+  {
+    "domain": "blog.gtisland.com",
+    "feed_url": "https://blog.gtisland.com/index.xml"
+  },
+  {
+    "domain": "yangbear.bearblog.dev",
+    "feed_url": "https://yangbear.bearblog.dev/feed/"
+  },
+  {
+    "domain": "yangbear.bearblog.dev",
+    "feed_url": "https://yangbear.bearblog.dev/feed/?type=rss"
+  },
+  {
+    "domain": "shuyulin1127.blogspot.com",
+    "feed_url": "https://shuyulin1127.blogspot.com/feeds/posts/default"
+  },
+  {
+    "domain": "shuyulin1127.blogspot.com",
+    "feed_url": "https://shuyulin1127.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "alicehsu.blog",
+    "feed_url": "https://alicehsu.blog/index.xml"
+  },
+  {
+    "domain": "timoblog.com",
+    "feed_url": "https://timoblog.com/rss.xml"
+  },
+  {
+    "domain": "timomath.com",
+    "feed_url": "https://timomath.com/index.xml"
+  },
+  {
+    "domain": "itshaun.com",
+    "feed_url": "https://itshaun.com/rss"
+  },
+  {
+    "domain": "susushare.com",
+    "feed_url": "https://susushare.com/feed/"
+  },
+  {
+    "domain": "susushare.com",
+    "feed_url": "https://susushare.com/comments/feed/"
+  },
+  {
+    "domain": "microblog.ttheng.com",
+    "feed_url": "https://microblog.ttheng.com/index.xml"
+  },
+  {
+    "domain": "blog.kalan.dev",
+    "feed_url": "https://blog.kalan.dev/rss.xml"
+  },
+  {
+    "domain": "blog.serv.idv.tw",
+    "feed_url": "https://blog.serv.idv.tw/feed/"
+  },
+  {
+    "domain": "life.huli.tw",
+    "feed_url": "https://life.huli.tw/atom.xml"
+  },
+  {
+    "domain": "blog.kyomind.tw",
+    "feed_url": "https://blog.kyomind.tw/atom.xml"
+  },
+  {
+    "domain": "blog.othree.net",
+    "feed_url": "https://feeds.feedburner.com/othree"
+  },
+  {
+    "domain": "lukehong.tw",
+    "feed_url": "https://www.lukehong.tw/index.xml"
+  },
+  {
+    "domain": "chswei.com",
+    "feed_url": "https://chswei.com/index.xml"
+  },
+  {
+    "domain": "blog.kianting.info",
+    "feed_url": "https://blog.kianting.info/atom.xml"
+  },
+  {
+    "domain": "blog.gslin.org",
+    "feed_url": "https://blog.gslin.org/feed/"
+  },
+  {
+    "domain": "blog.gslin.org",
+    "feed_url": "https://blog.gslin.org/comments/feed/"
+  },
+  {
+    "domain": "rayshineart.com",
+    "feed_url": "https://rayshineart.com/zh/blog/rss.xml"
+  },
+  {
+    "domain": "fatapple0406.github.io",
+    "feed_url": "https://fatapple0406.github.io/index.xml"
+  },
+  {
+    "domain": "emtech.cc",
+    "feed_url": "https://emtech.cc/rss.xml"
+  },
+  {
+    "domain": "yuncolorblog.com",
+    "feed_url": "https://yuncolorblog.com/index.xml"
+  },
+  {
+    "domain": "tianyanfeng.blog",
+    "feed_url": "https://tianyanfeng.blog/feed/"
+  },
+  {
+    "domain": "tianyanfeng.blog",
+    "feed_url": "https://tianyanfeng.blog/feed/?type=rss"
+  },
+  {
+    "domain": "tianyanstudio.blogspot.com",
+    "feed_url": "https://tianyanstudio.blogspot.com/feeds/posts/default"
+  },
+  {
+    "domain": "tianyanstudio.blogspot.com",
+    "feed_url": "https://tianyanstudio.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "taiwan.chtsai.org",
+    "feed_url": "https://taiwan.chtsai.org/feed/"
+  },
+  {
+    "domain": "taiwan.chtsai.org",
+    "feed_url": "https://taiwan.chtsai.org/comments/feed/"
+  },
+  {
+    "domain": "maggiephysio.com",
+    "feed_url": "https://maggiephysio.com/feed"
+  },
+  {
+    "domain": "blog.anna-yufeng.com",
+    "feed_url": "https://blog.anna-yufeng.com/rss.xml"
+  },
+  {
+    "domain": "blog.wildsky.cc",
+    "feed_url": "https://blog.wildsky.cc/rss.xml"
+  },
+  {
+    "domain": "sheracaolity.ghost.io",
+    "feed_url": "https://sheracaolity.ghost.io/rss/"
+  },
+  {
+    "domain": "route110.blog",
+    "feed_url": "https://route110.blog/index.xml"
+  },
+  {
+    "domain": "newtoypia.blogspot.com",
+    "feed_url": "https://newtoypia.blogspot.com/feeds/posts/default"
+  },
+  {
+    "domain": "newtoypia.blogspot.com",
+    "feed_url": "https://newtoypia.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "blog.worldofwheat.cc",
+    "feed_url": "https://blog.worldofwheat.cc/index.xml"
+  },
+  {
+    "domain": "blog.solazy.me",
+    "feed_url": "https://blog.solazy.me/feed/"
+  },
+  {
+    "domain": "blog.solazy.me",
+    "feed_url": "https://blog.solazy.me/feed/?type=rss"
+  },
+  {
+    "domain": "seths.blog",
+    "feed_url": "https://seths.blog/feed"
+  },
+  {
+    "domain": "sive.rs",
+    "feed_url": "https://sive.rs/feed"
+  },
+  {
+    "domain": "herbertlui.net",
+    "feed_url": "https://herbertlui.net/feed/"
+  },
+  {
+    "domain": "herbertlui.net",
+    "feed_url": "https://herbertlui.net/comments/feed/"
+  },
+  {
+    "domain": "kevquirk.com",
+    "feed_url": "https://kevquirk.com/feed"
+  },
+  {
+    "domain": "kevquirk.com",
+    "feed_url": "https://kevquirk.com/books-feed"
+  },
+  {
+    "domain": "kevquirk.com",
+    "feed_url": "https://kevquirk.com/notes-feed"
+  },
+  {
+    "domain": "rubenerd.com",
+    "feed_url": "https://www.rubenerd.au/feed/"
+  },
+  {
+    "domain": "rubenerd.com",
+    "feed_url": "http://showfeed.rubenerd.au/"
+  },
+  {
+    "domain": "birming.com",
+    "feed_url": "https://birming.com/feed.xml"
+  },
+  {
+    "domain": "birming.com",
+    "feed_url": "https://birming.com/podcast.xml"
+  },
+  {
+    "domain": "blog.jim-nielsen.com",
+    "feed_url": "https://blog.jim-nielsen.com/feed.xml"
+  },
+  {
+    "domain": "idiallo.com",
+    "feed_url": "https://idiallo.com/feed.xml"
+  },
+  {
+    "domain": "100r.co",
+    "feed_url": "http://100r.ca/links/rss.xml"
+  },
+  {
+    "domain": "luvstarkei.com",
+    "feed_url": "https://luvstarkei.com/feed"
+  },
+  {
+    "domain": "lukesmith.xyz",
+    "feed_url": "https://lukesmith.xyz/index.xml"
+  },
+  {
+    "domain": "ciechanow.ski",
+    "feed_url": "https://ciechanow.ski/atom.xml"
+  },
+  {
+    "domain": "thefoggiest.dev",
+    "feed_url": "https://thefoggiest.dev/feed/"
+  },
+  {
+    "domain": "brajeshwar.com",
+    "feed_url": "https://brajeshwar.com/feed"
+  },
+  {
+    "domain": "carolinecrampton.com",
+    "feed_url": "https://www.carolinecrampton.com/rss/"
+  },
+  {
+    "domain": "brainbaking.com",
+    "feed_url": "https://brainbaking.com/index.xml"
+  },
+  {
+    "domain": "mtwb.blog",
+    "feed_url": "https://mtwb.blog/feed"
+  },
+  {
+    "domain": "so1o.xyz",
+    "feed_url": "https://so1o.xyz/feed.xml"
+  },
+  {
+    "domain": "socialmediaescape.club",
+    "feed_url": "https://socialmediaescape.club/feed/"
+  },
+  {
+    "domain": "socialmediaescape.club",
+    "feed_url": "https://socialmediaescape.club/comments/feed/"
+  },
+  {
+    "domain": "feeds.megaphone.fm",
+    "feed_url": "https://feeds.megaphone.fm/feed"
+  },
+  {
+    "domain": "adventofcomputing.libsyn.com",
+    "feed_url": "http://feeds.libsyn.com/177941/rss"
+  },
+  {
+    "domain": "lexfridman.com",
+    "feed_url": "https://lexfridman.com/feed"
+  },
+  {
+    "domain": "nicechord.com",
+    "feed_url": "https://nicechord.com/index.xml"
+  },
+  {
+    "domain": "lemonjanet.com",
+    "feed_url": "https://lemonjanet.com/index.xml"
+  },
+  {
+    "domain": "vincentcwyu.substack.com",
+    "feed_url": "https://vincentcwyu.substack.com/feed"
+  },
+  {
+    "domain": "blog.chiukaun.com",
+    "feed_url": "https://blog.chiukaun.com/feed"
+  },
+  {
+    "domain": "greenhornfinancefootnote.blogspot.com",
+    "feed_url": "https://greenhornfinancefootnote.blogspot.com/feeds/posts/default"
+  },
+  {
+    "domain": "greenhornfinancefootnote.blogspot.com",
+    "feed_url": "https://greenhornfinancefootnote.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "owlsintowels.org",
+    "feed_url": "https://owlsintowels.org/feed/"
+  },
+  {
+    "domain": "owlsintowels.org",
+    "feed_url": "https://owlsintowels.org/comments/feed/"
+  },
+  {
+    "domain": "blog.justfont.com",
+    "feed_url": "https://blog.justfont.com/feed"
+  },
+  {
+    "domain": "understandingrelationships.com",
+    "feed_url": "https://understandingrelationships.com/feed"
+  },
+  {
+    "domain": "understandingrelationships.com",
+    "feed_url": "https://understandingrelationships.com/comments/feed"
+  },
+  {
+    "domain": "understandingrelationships.com",
+    "feed_url": "https://understandingrelationships.com/homepage-2/feed"
+  },
+  {
+    "domain": "synthtopia.com",
+    "feed_url": "https://www.synthtopia.com/feed/"
+  },
+  {
+    "domain": "synthtopia.com",
+    "feed_url": "https://www.synthtopia.com/comments/feed/"
+  },
+  {
+    "domain": "code.wiwi.blog",
+    "feed_url": "https://code.wiwi.blog/wiwi.atom"
+  },
+  {
+    "domain": "code.wiwi.blog",
+    "feed_url": "https://code.wiwi.blog/wiwi.rss"
+  },
+  {
+    "domain": "wiwi.video",
+    "feed_url": "https://wiwi.video/feeds/videos.xml"
+  },
+  {
+    "domain": "blusewill.us.to",
+    "feed_url": "https://blusewill.top/index.xml"
+  },
+  {
+    "domain": "sh.alynx.one",
+    "feed_url": "https://sh.alynx.one/atom.xml"
+  },
+  {
+    "domain": "tim.blog",
+    "feed_url": "https://tim.blog/feed"
+  },
+  {
+    "domain": "paulgraham.com",
+    "feed_url": "http://www.aaronsw.com/2002/feeds/pgessays.rss"
+  },
+  {
+    "domain": "news.ycombinator.com",
+    "feed_url": "https://news.ycombinator.com/rss"
+  },
+  {
+    "domain": "itch.io",
+    "feed_url": "https://itch.io/feed/featured.xml"
+  },
+  {
+    "domain": "itch.io",
+    "feed_url": "https://itch.io/blog.rss"
+  },
+  {
+    "domain": "itch.io",
+    "feed_url": "https://itch.io/devlogs.xml"
+  },
+  {
+    "domain": "darkranger.no-ip.org",
+    "feed_url": "https://darkranger.no-ip.org/rss.xml"
+  },
+  {
+    "domain": "blog.dabinn.net",
+    "feed_url": "https://blog.dabinn.net/feed/"
+  },
+  {
+    "domain": "blog.dabinn.net",
+    "feed_url": "https://blog.dabinn.net/comments/feed/"
+  },
+  {
+    "domain": "ghostsinthelab.org",
+    "feed_url": "https://ghostsinthelab.org/feed"
+  },
+  {
+    "domain": "ltlnx.tw",
+    "feed_url": "https://ltlnx.tw/rssfeed.xml"
+  },
+  {
+    "domain": "manateelazycat.github.io",
+    "feed_url": "https://manateelazycat.github.io/feed.xml"
+  },
+  {
+    "domain": "ordinarykuma.blogspot.com",
+    "feed_url": "https://ordinarykuma.blogspot.com/feeds/posts/default"
+  },
+  {
+    "domain": "ordinarykuma.blogspot.com",
+    "feed_url": "https://ordinarykuma.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "owenyoung.com",
+    "feed_url": "https://owenyoung.com/atom.xml"
+  },
+  {
+    "domain": "pinchlime.com",
+    "feed_url": "https://pinchlime.com/rss.xml"
+  },
+  {
+    "domain": "plumz.me",
+    "feed_url": "https://plumz.me/feed/"
+  },
+  {
+    "domain": "plumz.me",
+    "feed_url": "https://plumz.me/feed/atom/"
+  },
+  {
+    "domain": "stallman.org",
+    "feed_url": "https://stallman.org/rss/rss.xml"
+  },
+  {
+    "domain": "blog.longwin.com.tw",
+    "feed_url": "https://blog.longwin.com.tw/feed/"
+  },
+  {
+    "domain": "blog.longwin.com.tw",
+    "feed_url": "https://blog.longwin.com.tw/comments/feed/"
+  },
+  {
+    "domain": "zaqizaba.xyz",
+    "feed_url": "https://zaqizaba.xyz/index.xml"
+  },
+  {
+    "domain": "soulminingrig.com",
+    "feed_url": "https://soulminingrig.com/feed.xml"
+  },
+  {
+    "domain": "blog.ryey.icu",
+    "feed_url": "https://blog.ryey.icu/feeds/all.atom.xml"
+  },
+  {
+    "domain": "blog.ryey.icu",
+    "feed_url": "https://blog.ryey.icu/feeds/atom.xml"
+  },
+  {
+    "domain": "himiku.com",
+    "feed_url": "https://www.himiku.com/feed/"
+  },
+  {
+    "domain": "himiku.com",
+    "feed_url": "https://www.himiku.com/feed/atom/"
+  },
+  {
+    "domain": "blog.ananq.me",
+    "feed_url": "https://blog.ananq.me/rss/"
+  },
+  {
+    "domain": "tel3c.tw",
+    "feed_url": "https://tel3c.tw/feed"
+  },
+  {
+    "domain": "blog.pulipuli.info",
+    "feed_url": "https://blog.pulipuli.info/feeds/posts/default"
+  },
+  {
+    "domain": "blog.pulipuli.info",
+    "feed_url": "https://blog.pulipuli.info/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "rocksaying.tw",
+    "feed_url": "https://rocksaying.tw/feed.xml"
+  },
+  {
+    "domain": "blog.jason.tools",
+    "feed_url": "https://blog.jason.tools/feeds/posts/default"
+  },
+  {
+    "domain": "blog.jason.tools",
+    "feed_url": "https://blog.jason.tools/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "weii.dev",
+    "feed_url": "https://weii.dev/rss/"
+  },
+  {
+    "domain": "program-think.blogspot.com",
+    "feed_url": "https://program-think.blogspot.com/feeds/posts/default"
+  },
+  {
+    "domain": "program-think.blogspot.com",
+    "feed_url": "https://program-think.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "geedea.pro",
+    "feed_url": "https://geedea.pro/index.xml"
+  },
+  {
+    "domain": "ruanyifeng.com",
+    "feed_url": "https://feeds.feedburner.com/ruanyifeng"
+  },
+  {
+    "domain": "readingoutpost.com",
+    "feed_url": "https://readingoutpost.com/feed"
+  },
+  {
+    "domain": "playpcesor.com",
+    "feed_url": "https://www.playpcesor.com/feeds/posts/default"
+  },
+  {
+    "domain": "playpcesor.com",
+    "feed_url": "https://www.playpcesor.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "breezymove.blogspot.com",
+    "feed_url": "https://breezymove.blogspot.com/feeds/posts/default"
+  },
+  {
+    "domain": "breezymove.blogspot.com",
+    "feed_url": "https://breezymove.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "kaochenlong.com",
+    "feed_url": "https://kaochenlong.com/feed.rss"
+  },
+  {
+    "domain": "yishantsai.com",
+    "feed_url": "https://yishantsai.com/index.xml"
+  },
+  {
+    "domain": "blog.andy-hu.com",
+    "feed_url": "https://blog.andy-hu.com/feed/"
+  },
+  {
+    "domain": "blog.andy-hu.com",
+    "feed_url": "https://blog.andy-hu.com/feed/?type=rss"
+  },
+  {
+    "domain": "gooseboop.com",
+    "feed_url": "https://gooseboop.com/index.xml"
+  },
+  {
+    "domain": "trail.bearblog.dev",
+    "feed_url": "https://trail.bearblog.dev/feed/"
+  },
+  {
+    "domain": "trail.bearblog.dev",
+    "feed_url": "https://trail.bearblog.dev/feed/?type=rss"
+  },
+  {
+    "domain": "blog.dm4.tw",
+    "feed_url": "https://blog.dm4.tw/feed.xml"
+  },
+  {
+    "domain": "boringgameofficial.github.io",
+    "feed_url": "https://boringgameofficial.github.io/index.xml"
+  },
+  {
+    "domain": "blog.slownie.com",
+    "feed_url": "https://blog.slownie.com/blog/index.xml"
+  },
+  {
+    "domain": "chang-shih-ting.com",
+    "feed_url": "https://chang-shih-ting.com/index.xml"
+  },
+  {
+    "domain": "chs-li.com",
+    "feed_url": "https://chs-li.com/rss.xml"
+  },
+  {
+    "domain": "erne.bearblog.dev",
+    "feed_url": "https://erne.bearblog.dev/feed/"
+  },
+  {
+    "domain": "erne.bearblog.dev",
+    "feed_url": "https://erne.bearblog.dev/feed/?type=rss"
+  },
+  {
+    "domain": "haruowang.vercel.app",
+    "feed_url": "https://haruowang.vercel.app/rss.xml"
+  },
+  {
+    "domain": "harrychung.com",
+    "feed_url": "https://harrychung.com/atom.xml"
+  },
+  {
+    "domain": "hellenmurmur.bearblog.dev",
+    "feed_url": "https://hellenmurmur.bearblog.dev/feed/"
+  },
+  {
+    "domain": "hellenmurmur.bearblog.dev",
+    "feed_url": "https://hellenmurmur.bearblog.dev/feed/?type=rss"
+  },
+  {
+    "domain": "j2hongming.github.io",
+    "feed_url": "https://j2hongming.github.io/atom.xml"
+  },
+  {
+    "domain": "j2hongming.github.io",
+    "feed_url": "https://j2hongming.github.io/rss2.xml"
+  },
+  {
+    "domain": "knoxyang.blogspot.com",
+    "feed_url": "https://knoxyang.blogspot.com/feeds/posts/default"
+  },
+  {
+    "domain": "knoxyang.blogspot.com",
+    "feed_url": "https://knoxyang.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "domain": "inkwell-y.blog",
+    "feed_url": "https://inkwell-y.blog/index.xml"
+  },
+  {
+    "domain": "meowjay.cc",
+    "feed_url": "https://meowjay.cc/rss.xml"
+  },
+  {
+    "domain": "neoisone.bearblog.dev",
+    "feed_url": "https://neoisone.bearblog.dev/feed/"
+  },
+  {
+    "domain": "neoisone.bearblog.dev",
+    "feed_url": "https://neoisone.bearblog.dev/feed/?type=rss"
+  },
+  {
+    "domain": "blog.moongazer.net",
+    "feed_url": "https://blog.moongazer.net/index.xml"
+  },
+  {
+    "domain": "novadng.studio",
+    "feed_url": "https://novadng.studio/rss"
+  },
+  {
+    "domain": "meihsinpan.substack.com",
+    "feed_url": "https://meihsinpan.substack.com/feed"
+  },
+  {
+    "domain": "prontlin.com",
+    "feed_url": "https://prontlin.com/index.xml"
+  }
+]
