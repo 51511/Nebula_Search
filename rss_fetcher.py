@@ -46,7 +46,7 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 HEADERS = {
-    "User-Agent": "NebulaBot/1.0 (RSS aggregator; https://github.com/your/nebula)",
+    "User-Agent": "NebulaBot/1.0 (RSS aggregator; https://github.com/51511/Nebula_Search)",
     "Accept": "application/rss+xml, application/atom+xml, text/xml, */*",
 }
 
@@ -299,33 +299,85 @@ def search(query: str, conn: sqlite3.Connection, limit: int = 10) -> list[dict]:
     """
     使用 SQLite FTS5 全文搜尋。
     Trigram tokenizer 對中文效果良好，不需要額外分詞。
+
+    短詞處理（< 3 字元）：
+    - FTS5 trigram 最短需要 3 字元，短詞搜尋必然空白。
+    - 先嘗試 FTS wildcard（在每個 token 末尾加 *），讓 trigram index 做前綴比對。
+    - 若 FTS 仍無結果，fallback 到全表 LIKE 搜尋（較慢但保底）。
     """
     cur = conn.cursor()
+    results = []
 
-    # FTS5 BM25 排序搜尋
-    cur.execute(
-        """
-        SELECT
-            a.id,
-            a.domain,
-            a.title,
-            a.link,
-            a.summary,
-            a.author,
-            a.published,
-            a.tags,
-            bm25(articles_fts) AS score
-        FROM articles_fts
-        JOIN articles a ON a.id = articles_fts.rowid
-        WHERE articles_fts MATCH ?
-        ORDER BY score
-        LIMIT ?
-        """,
-        (query, limit),
-    )
+    # ── FTS 搜尋（優先）────────────────────────────────────────────────────
+    # 短詞（< 3 字元）：把每個 token 都加上 * 做前綴匹配
+    # 長詞：直接用原始 query（BM25 表現最好）
+    def _build_fts_query(q: str) -> str:
+        tokens = q.split()
+        if any(len(t) < 3 for t in tokens):
+            # 每個 token 補 wildcard，讓 trigram index 展開前綴
+            return " ".join(t + "*" for t in tokens)
+        return q
 
-    columns = ["id", "domain", "title", "link", "summary", "author", "published", "tags", "score"]
-    return [dict(zip(columns, row)) for row in cur.fetchall()]
+    fts_query = _build_fts_query(query)
+
+    try:
+        cur.execute(
+            """
+            SELECT
+                a.id,
+                a.domain,
+                a.title,
+                a.link,
+                a.summary,
+                a.author,
+                a.published,
+                a.tags,
+                bm25(articles_fts) AS score
+            FROM articles_fts
+            JOIN articles a ON a.id = articles_fts.rowid
+            WHERE articles_fts MATCH ?
+            ORDER BY score
+            LIMIT ?
+            """,
+            (fts_query, limit),
+        )
+        columns = ["id", "domain", "title", "link", "summary", "author", "published", "tags", "score"]
+        results = [dict(zip(columns, row)) for row in cur.fetchall()]
+    except sqlite3.OperationalError as e:
+        # query 語法錯誤時（如含特殊字元）直接跳 fallback
+        log.debug(f"FTS 查詢失敗，改用 LIKE: {e}")
+
+    # ── LIKE fallback（短詞或 FTS 零結果時）────────────────────────────────
+    if not results:
+        like_pat = f"%{query}%"
+        cur.execute(
+            """
+            SELECT
+                id,
+                domain,
+                title,
+                link,
+                summary,
+                author,
+                published,
+                tags,
+                0.0 AS score
+            FROM articles
+            WHERE title   LIKE ?
+               OR summary LIKE ?
+               OR author  LIKE ?
+               OR tags    LIKE ?
+            ORDER BY published DESC
+            LIMIT ?
+            """,
+            (like_pat, like_pat, like_pat, like_pat, limit),
+        )
+        columns = ["id", "domain", "title", "link", "summary", "author", "published", "tags", "score"]
+        results = [dict(zip(columns, row)) for row in cur.fetchall()]
+        if results:
+            log.debug(f"FTS 無結果，LIKE fallback 找到 {len(results)} 筆")
+
+    return results
 
 
 def print_search_results(results: list[dict], query: str):

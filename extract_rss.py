@@ -35,13 +35,7 @@ TIMEOUT = aiohttp.ClientTimeout(
 )
 
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 "
-        "(X11; Linux x86_64) "
-        "AppleWebKit/537.36 "
-        "(KHTML, like Gecko) "
-        "Chrome/124.0 Safari/537.36"
-    ),
+    "User-Agent": "NebulaBot/1.0 (RSS aggregator; https://github.com/51511/Nebula_Search)",
     "Accept": "*/*",
 }
 
@@ -343,39 +337,28 @@ async def extract_rss(graph):
     )
 
     results = []
-
     completed = 0
+
+    async def probe_with_domain(domain):
+        feeds = await probe_domain(session, domain, sem)
+        return domain, feeds
 
     async with aiohttp.ClientSession(
         connector=connector
     ) as session:
 
-        task_map = {
-
-            asyncio.create_task(
-                probe_domain(
-                    session,
-                    domain,
-                    sem,
-                )
-            ): domain
-
+        tasks = [
+            asyncio.create_task(probe_with_domain(domain))
             for domain in domains
-        }
+        ]
 
-        for task in asyncio.as_completed(
-            task_map
-        ):
-
-            domain = task_map[task]
+        for coro in asyncio.as_completed(tasks):
 
             try:
-
-                feeds = await task
-
+                domain, feeds = await coro
             except Exception:
-
-                feeds = []
+                completed += 1
+                continue
 
             completed += 1
 
