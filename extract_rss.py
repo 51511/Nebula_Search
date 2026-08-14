@@ -26,7 +26,7 @@ except Exception:
 CONCURRENCY = 100
 
 
-INPUT_PATH = "/blogroll_graph.json" # 輸入Nebula結果路徑
+INPUT_PATH = "blogroll_graph.json" # 輸入Nebula結果路徑
 OUTPUT_PATH = "rss_feeds.json"
 
 TIMEOUT = aiohttp.ClientTimeout(

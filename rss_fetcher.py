@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Nebula RSS Fetcher & 搜尋引擎
 ==============================
@@ -143,6 +144,16 @@ def parse_date(entry) -> str:
     return ""
 
 
+
+def is_comment_url(link: str) -> bool:
+    """過濾掉留言區網址（Blogspot showComment、Disqus thread 等），
+    避免把讀者留言誤植為文章本體。"""
+    if not link:
+        return False
+    comment_markers = ['showComment=', 'disqus_thread', '#comment']
+    return any(marker in link for marker in comment_markers)
+
+
 def parse_feed(raw_bytes: bytes, feed_url: str, domain: str) -> list[dict]:
     """
     用 feedparser 解析 RSS/Atom，回傳文章清單。
@@ -167,6 +178,9 @@ def parse_feed(raw_bytes: bytes, feed_url: str, domain: str) -> list[dict]:
         published = parse_date(entry)
 
         if not title and not link:
+            continue
+
+        if is_comment_url(link):
             continue
 
         articles.append({

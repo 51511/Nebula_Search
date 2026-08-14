@@ -1,0 +1,17 @@
+# 執行期間動態產生的資料，不進版本控制
+nebula.db
+articles.json
+rss_feeds.json
+blogroll_graph.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 備份檔
+*.bak
+
+# 系統檔
+.DS_Store
+data/

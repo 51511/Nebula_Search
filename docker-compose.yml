@@ -1,0 +1,16 @@
+services:
+  web:
+    image: nebula
+    ports:
+      - "1999:1999"
+    command: uvicorn app:app --host 0.0.0.0 --port 1999
+    volumes:
+      - ./:/app
+    restart: unless-stopped
+
+  updater:
+    image: nebula
+    command: cron -f
+    volumes:
+      - ./:/app
+    restart: unless-stopped

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nebula Search</title>
+
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .faq {
+      max-width: 900px;
+      margin: 60px auto 40px;
+      padding: 0 20px;
+      border-top: 1px solid #2a2a2a;
+    }
+    .faq h2 {
+      font-size: 20px;
+      opacity: 0.5;
+      margin-top: 36px;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+    .faq-item {
+      margin-bottom: 28px;
+    }
+    .faq-item h3 {
+      font-size: 16px;
+      margin: 0 0 8px;
+      color: #7dd3fc;
+    }
+    .faq-item p {
+      margin: 0;
+      line-height: 1.7;
+      color: #aaa;
+      font-size: 15px;
+    }
+    .faq-item a {
+      color: #7dd3fc;
+      text-decoration: none;
+    }
+    .faq-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Nebula Search</h1>
+
+  <input
+    id="searchInput"
+    type="text"
+    placeholder="搜尋 Blog..."
+  >
+
+  <div id="results"></div>
+
+</div>
+
+<div class="faq">
+  <h2>關於 Nebula Search</h2>
+
+  <div class="faq-item">
+    <h3>🔍 搜尋技巧</h3>
+    <p>輸入關鍵字即時搜尋，多個關鍵字以空白分隔，例如「生活 日記」。</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>📰 我的文章沒有出現？</h3>
+    <p>本站只收錄各 Blog RSS 目前公開的最新文章，較早的舊文章不在索引內，這是正常現象。</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>🌐 沒有收錄我的 Blog？</h3>
+    <p>
+      Nebula 透過 Blogroll 連結探索 Blog 圈，若你的 Blog 尚未被收錄，
+      請將網址與 RSS 地址寄至
+      <a href="mailto:104262@protonmail.com">104262@protonmail.com</a>，
+      基本上不會有審查。
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>🐛 發現 Bug？</h3>
+    <p>
+      請到
+      <a href="https://github.com/51511/Nebula_Search" target="_blank" rel="noopener noreferrer">GitHub</a>
+      回報，但也要我有時間修 😅
+    </p>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
