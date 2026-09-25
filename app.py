@@ -141,3 +141,48 @@ def search(
         "count": len(results),
         "results": results,
     }
+
+
+@app.get("/latest")
+def latest_page():
+    return FileResponse("frontend/latest.html")
+
+
+@app.get("/api/latest")
+def latest(limit: int = Query(50, ge=1, le=100)):
+    conn = get_conn()
+    cur = conn.cursor()
+    cur.execute(
+        """
+        SELECT id, domain, title, link, summary, author, published, tags
+        FROM articles
+        WHERE published IS NOT NULL AND published != ''
+        ORDER BY published DESC
+        LIMIT ?
+        """,
+        (limit,),
+    )
+    results = [dict(row) for row in cur.fetchall()]
+    conn.close()
+    return {"count": len(results), "results": results}
+
+@app.get("/sites")
+def sites_page():
+    return FileResponse("frontend/sites.html")
+
+
+@app.get("/api/sites")
+def sites():
+    import json
+
+    try:
+        with open("rss_feeds.json", "r", encoding="utf-8") as f:
+            feeds = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        feeds = []
+
+    return {
+        "count": len(feeds),
+        "results": feeds,
+    }
+

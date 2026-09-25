@@ -58,6 +58,9 @@ REQUEST_DELAY = 0.2
 DB_PATH = "nebula.db"
 ARTICLES_JSON = "articles.json"
 
+# 不收錄的網域（非個人 Blog，會刷屏）
+BLOCKED_DOMAINS = {"itch.io", "news.ycombinator.com"}
+
 
 # ── SQLite 全文搜尋初始化 ─────────────────────────────────────────────────────
 
@@ -237,6 +240,7 @@ async def fetch_feed(
 
 async def fetch_all_feeds(feeds: list[dict]) -> list[dict]:
     """非同步抓取所有 RSS Feed"""
+    feeds = [f for f in feeds if f.get("domain") not in BLOCKED_DOMAINS]
     sem = asyncio.Semaphore(CONCURRENCY)
     connector = aiohttp.TCPConnector(
         limit=CONCURRENCY,
@@ -511,7 +515,7 @@ if __name__ == "__main__":
     log.info(f"新增 {new_count} 篇文章到資料庫")
 
     # 輸出 JSON
-    save_to_json(articles, args.output)
+    # save_to_json(articles, args.output)  # 停用：網站不讀，且大檔會導致 OOM
 
     # 顯示統計
     print_stats(conn)

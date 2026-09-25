@@ -25,6 +25,9 @@ except Exception:
 
 CONCURRENCY = 100
 
+# 不收錄的網域（非個人 Blog，會刷屏）
+BLOCKED_DOMAINS = {"itch.io", "news.ycombinator.com"}
+
 
 INPUT_PATH = "blogroll_graph.json" # 輸入Nebula結果路徑
 OUTPUT_PATH = "rss_feeds.json"
@@ -319,7 +322,7 @@ async def probe_domain(
 
 async def extract_rss(graph):
 
-    domains = list(graph.keys())
+    domains = [d for d in graph.keys() if d not in BLOCKED_DOMAINS]
 
     log.info(
         f"共 {len(domains)} 個 domain，開始探索 RSS…"

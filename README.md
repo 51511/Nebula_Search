@@ -4,7 +4,7 @@ Nebula Blog 搜尋引擎
 
 不想自己部屬？[我已經部屬好了](https://nebula.xn--i2rt58ao7w.com/)（不過我不保證穩定）
 
-把 Nebula 產生的 json 當作「星圖」，並同步抓取所有 RSS/Atom Feed，建立中文Blog圈搜尋引擎。
+把 [Nebula](https://github.com/51511/Nebula) 產生的 json 當作「星圖」，並同步抓取所有 RSS/Atom Feed，建立中文Blog圈搜尋引擎。
 ![picture](https://i.meee.com.tw/dTjJFIP.png)
 
 **預設已經不提供資料庫！請自行跑Nebula獲取**

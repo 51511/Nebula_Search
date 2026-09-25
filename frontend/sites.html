@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RSS 網站清單 - Nebula Search</title>
+
+  <link rel="stylesheet" href="/static/style.css">
+
+  <style>
+    .sites {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .back {
+      margin-bottom: 30px;
+    }
+
+    .back a {
+      color: #7dd3fc;
+      text-decoration: none;
+    }
+
+    .site-count {
+      color: #aaa;
+      margin-bottom: 24px;
+    }
+
+    .site-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .site-item {
+      padding: 16px;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+    }
+
+    .domain {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .domain a {
+      color: #7dd3fc;
+      text-decoration: none;
+    }
+
+    .domain a:hover {
+      text-decoration: underline;
+    }
+
+    .feed {
+      font-size: 13px;
+      color: #888;
+      word-break: break-all;
+    }
+
+    .feed a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    .feed a:hover {
+      color: #7dd3fc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="sites">
+
+  <div class="back">
+    <a href="/">← 回到 Nebula Search</a>
+  </div>
+
+  <h1>🌐 RSS 網站清單</h1>
+
+  <div id="siteCount" class="site-count">
+    載入中...
+  </div>
+
+  <div id="siteList" class="site-list"></div>
+
+</div>
+
+<script>
+async function loadSites() {
+  const response = await fetch("/api/sites");
+  const data = await response.json();
+
+  document.getElementById("siteCount").textContent =
+    `目前 RSS 清單共有 ${data.count} 個網站`;
+
+  const list = document.getElementById("siteList");
+
+  data.results.forEach(site => {
+    const item = document.createElement("div");
+    item.className = "site-item";
+
+    const domain = document.createElement("div");
+    domain.className = "domain";
+
+    const domainLink = document.createElement("a");
+    domainLink.href = "https://" + site.domain;
+    domainLink.target = "_blank";
+    domainLink.rel = "noopener noreferrer";
+    domainLink.textContent = site.domain;
+
+    domain.appendChild(domainLink);
+
+    const feed = document.createElement("div");
+    feed.className = "feed";
+
+    const feedLink = document.createElement("a");
+    feedLink.href = site.feed_url;
+    feedLink.target = "_blank";
+    feedLink.rel = "noopener noreferrer";
+    feedLink.textContent = site.feed_url;
+
+    feed.appendChild(feedLink);
+
+    item.appendChild(domain);
+    item.appendChild(feed);
+
+    list.appendChild(item);
+  });
+}
+
+loadSites();
+</script>
+
+</body>
+</html>

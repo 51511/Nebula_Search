@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>最新文章 | Nebula Search</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .topnav {
+      max-width: 900px;
+      margin: 20px auto 0;
+      padding: 0 20px;
+    }
+    .topnav a {
+      color: #7dd3fc;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .topnav a:hover { text-decoration: underline; }
+
+    .latest-list {
+      max-width: 900px;
+      margin: 20px auto 60px;
+      padding: 0 20px;
+    }
+    .latest-item {
+      padding: 16px 0;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .latest-item h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+    .latest-item h3 a {
+      color: #7dd3fc;
+      text-decoration: none;
+    }
+    .latest-item h3 a:hover { text-decoration: underline; }
+    .latest-meta {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 6px;
+    }
+    .latest-summary {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #aaa;
+      margin: 0;
+    }
+    .status {
+      text-align: center;
+      color: #777;
+      padding: 40px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="/">← 返回搜尋</a>
+</div>
+
+<div class="container">
+  <h1>最新文章</h1>
+  <p style="opacity:0.5;margin-top:0;">依發布時間由新到舊，顯示最近 50 篇</p>
+</div>
+
+<div class="latest-list" id="list">
+  <div class="status">載入中…</div>
+</div>
+
+<script>
+  function esc(s) {
+    return String(s ?? "").replace(/[&<>"']/g, c => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[c]));
+  }
+
+  function fmtDate(s) {
+    const d = new Date(s);
+    if (isNaN(d)) return esc(s);
+    return d.toLocaleString("zh-TW", { hour12: false });
+  }
+
+  function stripHtml(s) {
+    const div = document.createElement("div");
+    div.innerHTML = s || "";
+    return div.textContent || "";
+  }
+
+  fetch("/api/latest?limit=50")
+    .then(r => r.json())
+    .then(data => {
+      const list = document.getElementById("list");
+      if (!data.results.length) {
+        list.innerHTML = '<div class="status">目前沒有文章</div>';
+        return;
+      }
+      list.innerHTML = data.results.map(a => {
+        const summary = stripHtml(a.summary).slice(0, 160);
+        return `
+          <div class="latest-item">
+            <h3><a href="${esc(a.link)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a></h3>
+            <div class="latest-meta">
+              ${esc(a.domain)}${a.author ? " · " + esc(a.author) : ""} · ${fmtDate(a.published)}
+            </div>
+            <p class="latest-summary">${esc(summary)}${summary.length >= 160 ? "…" : ""}</p>
+          </div>`;
+      }).join("");
+    })
+    .catch(() => {
+      document.getElementById("list").innerHTML =
+        '<div class="status">載入失敗，請稍後再試</div>';
+    });
+</script>
+
+</body>
+</html>
